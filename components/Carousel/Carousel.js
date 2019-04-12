@@ -20,11 +20,15 @@ class Carousel {
   }
 
   moveLeft() {
+      this.currentIndex -- ;
 
+      this.images[this.currentIndex].style.display = "flex";
   }
 
   moveRight() {
+      this.currentIndex += 1;
 
+      this.images[this.currentIndex].style.display = "flex";
   }
 
 
